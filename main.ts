@@ -22,13 +22,16 @@ basic.pause(1000)
 basic.forever(function () {
     basic.pause(1000)
     таймер += 1
-    if (таймер == 1) {
-        basic.showIcon(IconNames.Sad)
-    }
-    if (таймер == 2) {
-        basic.showIcon(IconNames.Asleep)
+    if (таймер <= 2) {
+        basic.showIcon(IconNames.Happy)
     }
     if (таймер == 3) {
+        basic.showIcon(IconNames.Sad)
+    }
+    if (таймер == 4) {
+        basic.showIcon(IconNames.Asleep)
+    }
+    if (таймер == 5) {
         while (true) {
             basic.showIcon(IconNames.Skull)
         }
